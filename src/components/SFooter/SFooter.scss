@@ -1,0 +1,14 @@
+.footer {
+  background: var(--color-gray-light);
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4rem;
+  }
+  &__title{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--color-black-light);
+  }
+}
