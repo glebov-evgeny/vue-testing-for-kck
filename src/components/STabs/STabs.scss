@@ -1,0 +1,22 @@
+.tabs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  width: 100%;
+  max-width: 8rem;
+  border: .1rem solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    &:nth-child(2){
+      background: var(--color-tab-active);
+      border-left: .1rem solid var(--color-border);
+    }
+  }
+}

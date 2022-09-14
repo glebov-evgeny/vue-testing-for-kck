@@ -2,8 +2,13 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-black-light: #393B3D;
+  --color-black-strong: #2B2839;
   --color-gray: #E6E6E6;
   --color-gray-light: #ECECEC;
+  --color-gray-lighter: #D9D9D9;
+  --color-placeholder: #A5A5A5;
+  --color-border: #647A8C;
+  --color-tab-active: #E5E9EC;
 }
 
 html {
@@ -41,4 +46,40 @@ body {
   @media (min-width: 768px) {
     min-height: calc(100vh - 30rem);
   }
+}
+
+.table{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-gray);
+    width: 24%;
+    min-height: 5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--color-black);
+    padding: 1.5rem;
+    &:not(:last-child){
+      margin-right: 1rem;
+    }
+    &:last-child{
+      max-width: calc(100% - 94%);
+    }
+  }
+
+}
+
+.list-animation-enter-active,
+.list-animation-leave-active {
+  transition: all .3s ease;
+}
+.list-animation-enter-from,
+.list-animation-leave-to {
+  opacity: 0;
+  transform: translateX(-50px);
 }

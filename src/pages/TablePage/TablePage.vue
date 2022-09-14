@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import './MainPage.scss';
+import '../MainPage/MainPage.scss';
 import { mapActions, mapGetters } from 'vuex';
 import SItem from '@/components/SItem/SItem.vue';
 import SFilter from '@/components/SFilter/SFilter.vue';
